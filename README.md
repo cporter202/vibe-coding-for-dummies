@@ -1,27 +1,69 @@
 # 📘 Vibe Coding for Dummies
 
+<div align="center">
+
+![Chris Porter](https://firebasestorage.googleapis.com/v0/b/facesift.firebasestorage.app/o/user_uploads%2F83EXwNWgaKe1BHmyd9ISw3HCEfi2%2F1768274923843-ChatGPT%20Image%20Jan%2012%2C%202026%2C%2010_28_19%20PM.png?alt=media&token=ed392466-0616-4781-94b0-a829268f3f23)
+
 **Build real software without being a "coder"**
 
+[![Firebase](https://img.shields.io/badge/Firebase-039BE5?style=for-the-badge&logo=Firebase&logoColor=white)](https://firebase.google.com/)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com)
+[![Cursor](https://img.shields.io/badge/Cursor-AI--Powered-00A4EF?style=for-the-badge&logo=cursor&logoColor=white)](https://cursor.sh/)
+[![Beginner Friendly](https://img.shields.io/badge/Beginner-Friendly-brightgreen?style=for-the-badge)](./lessons/01-mindset.md)
+[![Free](https://img.shields.io/badge/Free-Start-00C853?style=for-the-badge)](./lessons/02-tools.md)
+[![30 Days](https://img.shields.io/badge/Goal-30%20Days-orange?style=for-the-badge)](./lessons/07-monetize.md)
+
+</div>
+
+---
+
+<div align="center">
+
+### 🚀 **From Idea to Deployed App in 30 Days**
+
+**No gatekeeping. No fluff. Just building.**
+
 This course shows you how to build and ship real software using AI, without traditional coding education. You'll learn how to think, build, and ship using vibe coding.
+
+</div>
 
 ---
 
 ## 🎯 What You'll Get
 
-- **A clear path from idea to deployed app** (no tutorial hell)
-- **The exact stack that works** (Firebase Studio + GitHub + Cursor)
-- **Real building, not theory** (you'll ship something by the end)
-- **How to turn this into money** (SaaS, micro tools, paid communities)
+<div align="center">
+
+| 🎓 **Learn** | 🛠️ **Build** | 🚀 **Ship** | 💰 **Monetize** |
+|:---:|:---:|:---:|:---:|
+| Clear path from idea to app | Exact stack that works | Real deployment | Turn apps into money |
+| No tutorial hell | Firebase + GitHub + Cursor | Ship something real | SaaS, tools, communities |
+
+</div>
+
+- ✅ **A clear path from idea to deployed app** (no tutorial hell)
+- ✅ **The exact stack that works** (Firebase Studio + GitHub + Cursor)
+- ✅ **Real building, not theory** (you'll ship something by the end)
+- ✅ **How to turn this into money** (SaaS, micro tools, paid communities)
 
 ## 🚀 Quick Start
 
-1. Start with [Section 0: Before You Start](./lessons/01-mindset.md) — Mindset reset
-2. Work through each section in order
-3. Build your first app in Section 4
-4. Ship it in Section 5
-5. Learn how to monetize in Section 6
+<div align="center">
 
-**Time commitment:** Work through this at your own pace. Most people finish in 1-2 weeks.
+### ⚡ **Get Started in 5 Steps**
+
+</div>
+
+1. **🧠 Mindset Reset** → Start with [Section 0: Before You Start](./lessons/01-mindset.md)
+2. **🛠️ Learn the Stack** → Work through Sections 1-3 (Tools, GitHub, Cursor)
+3. **🔥 Build Your First App** → Section 4 (Your First Real Build)
+4. **🚢 Ship It** → Section 5 (Deployment)
+5. **💰 Monetize** → Section 6 (Turn It Into Money)
+
+<div align="center">
+
+**⏱️ Time commitment:** Work through this at your own pace. Most people finish in 1-2 weeks.
+
+</div>
 
 ---
 
@@ -133,11 +175,19 @@ Inside the [Vibe Coding with Chris Skool community](https://www.skool.com/vibe-c
 
 ## 🤝 About This Course
 
-This isn't a traditional coding course. I don't gatekeep, I don't overload you with theory, and I don't expect you to become a "real developer" before you ship something.
+<div align="center">
 
-This is the exact workflow I use to build and ship software that makes money.
+### **This isn't a traditional coding course.**
+
+I don't gatekeep, I don't overload you with theory, and I don't expect you to become a "real developer" before you ship something.
+
+**This is the exact workflow I use to build and ship software that makes money.**
 
 **Built by:** [Chris Porter](https://www.skool.com/vibe-coding-with-chris-7196)
+
+[![Skool Community](https://img.shields.io/badge/Join-Skool%20Community-FF6B6B?style=for-the-badge&logo=skool&logoColor=white)](https://www.skool.com/vibe-coding-with-chris-7196)
+
+</div>
 
 ---
 
