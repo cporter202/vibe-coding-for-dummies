@@ -108,31 +108,34 @@ Shipping is the difference between a hobby and a real project.
 
 ### The Deployment Process
 
-**Step 1: Build your app**
-- Make sure it works locally
-- Test the core features
-- Fix critical bugs (non-critical bugs can wait)
+**If you've followed the workflow, you've already:**
+- Built your project bones in Firebase Studio
+- Published to create the project in Firebase Console
+- Enabled all services (Auth, Firestore, Hosting)
+- Synced to GitHub
+- Built in Cursor
 
-**Step 2: Sync to GitHub (if you haven't already)**
-- When you publish/sync from Firebase Studio, it will ask you to create a GitHub repo
-- Enter a repo name (like `my-note-app`)
-- **Make it private** (don't commit secret keys or sensitive info)
-- Firebase Studio automatically creates the repo and syncs your code
+**Now to deploy:**
 
-**Step 3: Deploy**
+**Step 1: Make sure everything is synced**
+- If you've been working in Cursor, commit and push your changes to GitHub
+- Sync your changes back to Firebase Studio
+- Make sure Firebase Studio has your latest code
+
+**Step 2: Deploy from Firebase Studio**
 - In Firebase Studio, go to Hosting
 - Click "Deploy" or "Publish"
 - Firebase Studio handles the deployment
 - Wait for it to complete
 
-**Step 4: Get your live URL**
+**Step 3: Get your live URL**
 - Firebase gives you a URL like: `your-app-name.web.app`
 - That's your live app
 - Share it with the world
 
 **That's it. Your app is live.**
 
-**Note:** If you've been working in Cursor, make sure you've committed and pushed your changes to GitHub, then sync back to Firebase Studio before deploying.
+**Note:** Since you enabled Hosting when you set up your project bones, deployment is just one click. That's why we enable services early — it makes deployment simple later.
 
 ### Seeing Your App in the Wild
 

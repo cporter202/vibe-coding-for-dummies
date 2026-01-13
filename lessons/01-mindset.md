@@ -68,6 +68,22 @@ Describe the behavior. Let the tools figure out the code.
 
 That's the entire philosophy. Everything else is just execution.
 
+### The Project Bones Concept
+
+**When we talk about "project bones," we mean:**
+
+- The basic structure and skeleton of your app
+- The foundation that everything else attaches to
+- Not the full app, just the structure
+- Built with a few prompts to get it moving
+
+**Think of it like building a house:**
+- First, you build the foundation and frame (project bones)
+- Then you add walls, plumbing, electrical (features)
+- Then you decorate and finish (polish)
+
+**We build the bones first, then add everything else. This makes the whole process easier.**
+
 ---
 
 ## Lesson 0.2 — What You Will (and Won't) Learn Here

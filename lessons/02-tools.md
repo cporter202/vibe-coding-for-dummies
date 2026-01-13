@@ -142,38 +142,52 @@ Firebase Studio flips this:
 
 Here's the exact workflow I use (and you'll use too):
 
-**Step 1: Start in Firebase Studio**
+**Step 1: Build Project Bones in Firebase Studio**
 - Create your project in Firebase Studio
-- Get the backend, auth, database, and hosting set up
-- This is the "boring but important stuff" — Firebase handles it
-- Build the initial version here to get comfortable
+- Use prompts to build the "project bones" — the basic structure and skeleton
+- Get a few prompts in to get it moving
+- This is where you establish the foundation before diving deep
 
-**Step 2: Firebase Studio Creates Your GitHub Repo (Automatic!)**
-- When you publish/sync your code from Firebase Studio, it will ask you to create a GitHub repo
+**Step 2: Publish from Firebase Studio**
+- Publish your project from Firebase Studio
+- This creates the project folder in Firebase Console
+- **This step is crucial** — it sets up your project in the Firebase ecosystem
+
+**Step 3: Enable Services in Firebase Console**
+- Go to Firebase Console (the project you just published)
+- Enable Authentication (Email/Password)
+- Enable Firestore Database
+- Enable Hosting
+- Configure any other services you need
+- **This makes your life much easier later** — all services are ready to go
+
+**Step 4: Sync to GitHub (Automatic!)**
+- When you sync from Firebase Studio, it will ask you to create a GitHub repo
 - You just enter a repo name (like `my-note-app`)
 - Firebase Studio automatically creates the repo and syncs your code to it
 - **You don't manually create the repo. Firebase Studio does it for you.**
 - **Important:** Keep your repos private (don't commit secret keys or sensitive info)
 
-**Step 3: Move to Cursor**
+**Step 5: Clone to Cursor**
 - Clone the GitHub repo to your computer
-- Open it in Cursor
-- This is where you move fast, refactor, and let AI help
-- Cursor understands your entire codebase, so building is faster
+- Open the project folder in Cursor
+- Now you can build fast with AI
+- All your Firebase services are already configured, so Cursor can work with them immediately
 
-**Step 4: Sync Back and Deploy**
-- When it's time to ship, commit your changes to GitHub
-- Sync everything back to Firebase Studio
+**Step 6: Build and Iterate**
+- Use Cursor to build features, refactor, and improve
+- Commit changes to GitHub
+- Sync back to Firebase Studio when ready
 - Deploy from Firebase Studio (one-click deployment)
-- Your app is live
 
-**That loop is the whole game: Build it. Commit it. Deploy it. Repeat.**
+**That loop is the whole game: Build bones → Publish → Enable services → Sync to GitHub → Build in Cursor → Deploy. Repeat.**
 
 **Why this workflow works:**
 - Firebase Studio removes setup friction (start building immediately)
+- Publishing first ensures all services are properly configured
+- Enabling services early makes everything easier later
 - Firebase Studio removes GitHub setup friction (creates repo for you automatically)
-- GitHub + Cursor removes building friction (AI helps you build fast)
-- Firebase Studio removes deployment friction (one-click ship)
+- Cursor removes building friction (AI helps you build fast with everything already set up)
 
 **You don't fight the tools. You use each tool for what it's best at.**
 
@@ -188,7 +202,7 @@ Here's the exact workflow I use (and you'll use too):
 
 **That's it. You're ready to build.**
 
-**Note:** Don't worry about configuring anything yet. We'll cover that when we build something real in Section 4.
+**Note:** Don't worry about configuring anything yet. We'll cover building project bones and enabling services in Section 4 when we build something real.
 
 ---
 

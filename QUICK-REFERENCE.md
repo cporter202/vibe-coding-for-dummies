@@ -24,14 +24,16 @@ Describe behavior, not code. Let the tools handle the syntax.
 
 ## 🔄 The Workflow
 
-1. **Start in Firebase Studio** — Get backend/auth/database set up
-2. **Publish/Sync** — Firebase Studio creates your GitHub repo automatically
-3. **Move to Cursor** — Clone the repo, build fast with AI
-4. **Sync back to Firebase Studio** — Deploy and ship
+1. **Build project bones in Firebase Studio** — Use prompts to create basic structure
+2. **Publish from Firebase Studio** — Creates project in Firebase Console
+3. **Enable services in Firebase Console** — Enable Auth, Firestore, Hosting
+4. **Sync to GitHub** — Firebase Studio creates your GitHub repo automatically
+5. **Clone to Cursor** — Build fast with AI (services already configured)
+6. **Sync back and deploy** — Deploy from Firebase Studio
 
-**Build it. Commit it. Deploy it. Repeat.**
+**Build bones → Publish → Enable services → Sync to GitHub → Build in Cursor → Deploy. Repeat.**
 
-**Note:** Firebase Studio creates your GitHub repo for you when you publish/sync. Keep repos private. Don't commit secret keys.
+**Note:** Build project bones first, publish to enable services, then sync to GitHub. Keep repos private. Don't commit secret keys.
 
 ---
 

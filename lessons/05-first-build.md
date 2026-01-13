@@ -92,62 +92,94 @@ Your first build should be so simple that you feel almost embarrassed by it. Tha
 
 ---
 
-## Lesson 4.2 — Scaffolding the App with AI
+## Lesson 4.2 — Building the Project Bones in Firebase Studio
 
-### The Two-Path Approach
+### Start with Project Bones
 
-**You have two options for your first build:**
+**For vibe coding, we always start in Firebase Studio.** This is where we build what I call the "project bones" — the basic structure and skeleton of your app.
 
-#### Path 1: Start in Firebase Studio (Recommended for First Build)
-- Create your project in Firebase Studio
-- Use the built-in editor to get started
-- Get comfortable with how things connect
-- Then move to Cursor when you're ready to build faster
+**Here's the process:**
 
-#### Path 2: Start in Cursor (If You're Comfortable)
-- Create a new folder for your project
-- Open that folder in Cursor
-- Ask Cursor to scaffold everything
-- Push to GitHub as you build
+#### Step 1: Create Your Project in Firebase Studio
 
-**For your first build, I recommend Path 1. Get comfortable with Firebase Studio first, then level up to Cursor.**
+1. **Go to Firebase Studio**
+2. **Create a new project**
+3. **Name it** something simple (like `my-note-app`)
 
-### Letting Cursor Generate Structure
+#### Step 2: Build the Project Bones with Prompts
 
-**If you're using Cursor (Path 2), here's how:**
+**Use prompts in Firebase Studio to get the basic structure:**
 
-1. **Open Cursor**
-2. **Create a new folder** for your project
-3. **Open that folder in Cursor**
-4. **Ask Cursor to scaffold your app**
+**Example prompts to get started:**
 
-**Example prompt:**
+1. "Create a simple web app structure with HTML, CSS, and JavaScript files"
+2. "Set up a basic login page with email and password fields"
+3. "Create a simple form to add notes with a title and content field"
+4. "Set up a basic page to display a list of notes"
 
-"I want to build a simple note-taking app. Users should be able to log in, create notes with a title and content, and see all their notes. Use Firebase for authentication and database (Firestore), and create a simple web app with HTML, CSS, and JavaScript."
+**You're not building the full app yet. You're building the bones — the structure that everything else will attach to.**
 
-**Cursor will:**
-- Create the file structure
-- Set up Firebase configuration
-- Create the authentication flow
-- Create the note creation form
-- Create the note display
-- Set up the basic styling
+**Get a few prompts in to get it moving.** Don't try to build everything at once. Just establish the foundation.
 
-**You don't write any code. You describe what you want, and Cursor builds it.**
+#### Step 3: Publish from Firebase Studio
 
-### Starting in Firebase Studio First
+**This is crucial:** Publish your project from Firebase Studio.
 
-**If you're starting in Firebase Studio (Path 1):**
+1. **Click "Publish" or "Deploy"** in Firebase Studio
+2. **This creates your project folder in Firebase Console**
+3. **This is what enables you to configure services**
 
-1. **Create your project** in Firebase Studio
-2. **Enable Authentication** (Email/Password)
-3. **Create a Firestore database**
-4. **Use the built-in code editor** to start building
-5. **Get comfortable** with how auth and database work
-6. **When you publish/sync**, Firebase Studio will create your GitHub repo automatically
-7. **Then move to Cursor** by cloning the GitHub repo to your computer
+**Why publish first?** Because this creates your project in the Firebase ecosystem, which allows you to enable all the services you need.
 
-**The key:** Start simple. Get it working. Firebase Studio handles the GitHub setup for you.
+#### Step 4: Enable Services in Firebase Console
+
+**Now go to Firebase Console** (the project you just published):
+
+1. **Enable Authentication:**
+   - Go to Authentication → Sign-in method
+   - Enable "Email/Password"
+   - Save
+
+2. **Enable Firestore Database:**
+   - Go to Firestore Database
+   - Click "Create database"
+   - Start in test mode (we'll set up security rules later)
+   - Choose a location (pick the closest to you)
+
+3. **Enable Hosting:**
+   - Go to Hosting
+   - Click "Get started"
+   - Follow the setup (Firebase will guide you)
+
+**This step makes your life much easier later.** All your services are configured and ready to go. When you move to Cursor, everything is already set up.
+
+#### Step 5: Sync to GitHub
+
+**Now sync your code to GitHub:**
+
+1. **In Firebase Studio, click "Sync" or "Publish to GitHub"**
+2. **Firebase Studio will ask you to create a GitHub repo**
+3. **Enter a repo name** (like `my-note-app`)
+4. **Make it private** (don't commit secret keys)
+5. **Firebase Studio automatically creates the repo and syncs your code**
+
+**Your project bones are now in GitHub, and all your Firebase services are enabled.**
+
+#### Step 6: Clone to Cursor
+
+**Now you're ready to build fast:**
+
+1. **Clone the GitHub repo** to your computer
+2. **Open the project folder in Cursor**
+3. **Start building with AI**
+
+**Why this order matters:**
+- Project bones are established
+- All Firebase services are enabled and configured
+- Cursor can immediately work with your Firebase setup
+- No configuration headaches later
+
+**The key:** Build bones → Publish → Enable services → Sync to GitHub → Build in Cursor. This order makes everything easier.
 
 ### Accepting "Ugly First"
 
@@ -295,32 +327,48 @@ Collection: notes
 
 ## 🎯 Action Step: Build Your First App
 
-**Right now, do this:**
+**Right now, do this (in this exact order):**
 
 1. **Pick your stupid simple idea** (from Lesson 4.1)
-2. **Open Cursor**
-3. **Create a new folder** for your project
-4. **Open that folder in Cursor**
-5. **Write this prompt:**
 
-```
-I want to build a simple [YOUR IDEA]. Users should be able to:
-- Sign up and log in (use Firebase Authentication)
-- [CORE FEATURE 1]
-- [CORE FEATURE 2]
+2. **Go to Firebase Studio:**
+   - Create a new project
+   - Name it something simple
 
-Use Firebase for authentication and database (Firestore). Create a simple web app with a clean, minimal design.
-```
+3. **Build the project bones with prompts:**
+   - "Create a simple web app structure"
+   - "Set up a basic login page"
+   - "Create a form for [YOUR CORE FEATURE]"
+   - Get a few prompts in to establish the structure
 
-6. **Let Cursor generate the code**
-7. **Run the app**
-8. **See what works**
-9. **Fix what's broken**
-10. **Keep iterating**
+4. **Publish from Firebase Studio:**
+   - Click "Publish" or "Deploy"
+   - This creates your project in Firebase Console
 
-**Don't wait. Don't overthink. Just build.**
+5. **Enable services in Firebase Console:**
+   - Enable Authentication (Email/Password)
+   - Enable Firestore Database
+   - Enable Hosting
+   - Get everything configured
 
-**Remember:** Your first version is supposed to be bad. That's how you learn.
+6. **Sync to GitHub:**
+   - In Firebase Studio, sync to GitHub
+   - Create a private repo
+   - Firebase Studio handles it automatically
+
+7. **Clone to Cursor:**
+   - Clone the GitHub repo to your computer
+   - Open the project folder in Cursor
+   - Now build fast with AI
+
+8. **Keep building and iterating:**
+   - Use Cursor to add features
+   - Commit changes to GitHub
+   - Sync back to Firebase Studio when ready
+
+**Don't skip steps. This order makes everything easier.**
+
+**Remember:** Build bones first. Enable services. Then build fast in Cursor. Your first version is supposed to be bad. That's how you learn.
 
 ---
 

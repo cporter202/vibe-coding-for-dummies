@@ -96,14 +96,21 @@ You don't need $300/month in tools. You need these three.
 
 **Here's how you'll actually use them:**
 
-1. **Start in Firebase Studio** — Get backend/auth/database set up (removes setup friction)
-2. **Publish/Sync** — Firebase Studio creates your GitHub repo automatically (removes GitHub setup friction)
-3. **Move to Cursor** — Clone the repo, build fast with AI (removes building friction)
-4. **Sync back to Firebase Studio** — Deploy and ship (removes deployment friction)
+1. **Build project bones in Firebase Studio** — Use prompts to create the basic structure
+2. **Publish from Firebase Studio** — Creates your project in Firebase Console
+3. **Enable services in Firebase Console** — Enable Auth, Firestore, Hosting (makes everything easier later)
+4. **Sync to GitHub** — Firebase Studio creates your GitHub repo automatically (removes GitHub setup friction)
+5. **Clone to Cursor** — Build fast with AI (all services already configured)
+6. **Sync back and deploy** — Deploy from Firebase Studio (one-click deployment)
 
-**Build it. Commit it. Deploy it. Repeat.**
+**Build bones → Publish → Enable services → Sync to GitHub → Build in Cursor → Deploy. Repeat.**
 
-**Key point:** Firebase Studio creates your GitHub repo for you when you publish/sync. You don't manually create it. Keep repos private and don't commit secret keys.
+**Key points:** 
+- Build project bones first (the structure)
+- Publish before syncing to GitHub (enables services)
+- Enable all services early (makes Cursor work easier)
+- Firebase Studio creates your GitHub repo automatically
+- Keep repos private and don't commit secret keys
 
 Each tool does what it's best at. You don't fight the tools.
 
