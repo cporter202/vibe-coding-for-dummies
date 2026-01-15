@@ -216,7 +216,7 @@ I don't gatekeep, I don't overload you with theory, and I don't expect you to be
 2. **Do the exercises** — Actually build, don't just read
 3. **Ship something** — Even if it's ugly (especially if it's ugly)
 4. **Use the quick reference** — [Quick Reference Guide](./QUICK-REFERENCE.md) for when you need a reminder
-5. **Join the community** — Get daily support and keep building
+5. **Level up** — [Join the Skool Community](./JOIN-SKOOL-COMMUNITY.md) to see the secrets and passive income strategies
 
 ---
 
@@ -228,4 +228,4 @@ Head to [Section 0: Before You Start](./lessons/01-mindset.md) and let's reset y
 
 ---
 
-*For daily lessons, real builds, and shipping accountability, join the [Vibe Coding with Chris Skool community](https://www.skool.com/vibe-coding-with-chris-7196).*
+*For daily lessons, real builds, and passive income strategies, [join the Vibe Coding with Chris Skool community](./JOIN-SKOOL-COMMUNITY.md).*
