@@ -12,11 +12,23 @@
 
 **Build real software without being a "coder"**
 
-### 🚀 **Ready to Level Up?**
+---
 
-**This course is just the beginning.** Join the [Vibe Coding with Chris Skool community](https://www.skool.com/vibe-coding-with-chris-7196) to go from beginner to pro with daily lessons, real builds, and shipping accountability.
+### 🚀 **This Course Gets You Started. The Community Makes You a Pro.**
 
-**Turn your vibe coding skills into real income.** 💰
+**Stop learning alone.** Join 100+ builders in the [Vibe Coding with Chris Skool community](https://www.skool.com/vibe-coding-with-chris-7196) and get:
+
+- ✅ **Daily build walkthroughs** — See real projects built step-by-step
+- ✅ **Live feedback on your work** — Get unstuck fast
+- ✅ **Shipping accountability** — Actually ship instead of just learning
+- ✅ **Monetization strategies** — Turn your apps into real income
+- ✅ **Access to Chris** — Direct support from someone who builds for a living
+
+**$15/month. No gatekeeping. Just building.**
+
+**[👉 Join the Community →](https://www.skool.com/vibe-coding-with-chris-7196)**
+
+---
 
 </div>
 
