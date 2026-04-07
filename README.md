@@ -55,12 +55,12 @@ This course shows you how to build and ship real software using AI, without trad
 | 🎓 **Learn** | 🛠️ **Build** | 🚀 **Ship** | 💰 **Monetize** |
 |:---:|:---:|:---:|:---:|
 | Clear path from idea to app | Exact stack that works | Real deployment | Turn apps into money |
-| No tutorial hell | Firebase + GitHub + Cursor | Ship something real | SaaS, tools, communities |
+| No tutorial hell | Google AI Studio + Firebase + GitHub + Cursor | Ship something real | SaaS, tools, communities |
 
 </div>
 
 - ✅ **A clear path from idea to deployed app** (no tutorial hell)
-- ✅ **The exact stack that works** (Firebase Studio + GitHub + Cursor)
+- ✅ **The exact stack that works** (Google AI Studio + Firebase + GitHub + Cursor)
 - ✅ **Real building, not theory** (you'll ship something by the end)
 - ✅ **How to turn this into money** (SaaS, micro tools, paid communities)
 
@@ -94,7 +94,7 @@ This course shows you how to build and ship real software using AI, without trad
 
 ### 🧱 [SECTION 1 — The Vibe Coding Stack (Simple + Free)](./lessons/02-tools.md)
 - Lesson 1.1 — The Only Tools You Need to Start (Free)
-- Lesson 1.2 — Why Firebase Studio Is Perfect for Beginners
+- Lesson 1.2 — Why Google AI Studio + Firebase Is Beginner-Friendly
 
 ### 🗂️ [SECTION 2 — GitHub Without the Fear](./lessons/03-github.md)
 - Lesson 2.1 — GitHub Explained Like You're 5
@@ -106,12 +106,12 @@ This course shows you how to build and ship real software using AI, without trad
 
 ### 🔥 [SECTION 4 — Your First Real Build (Tiny but Real)](./lessons/05-first-build.md)
 - Lesson 4.1 — Picking a "Stupid Simple" Idea
-- Lesson 4.2 — Scaffolding the App with AI
+- Lesson 4.2 — Scaffolding the App with Google AI Studio
 - Lesson 4.3 — Connecting Firebase (High Level)
 
 ### 🚢 [SECTION 5 — Shipping (Most People Never Get Here)](./lessons/06-ship.md)
 - Lesson 5.1 — What "Shipping" Actually Means
-- Lesson 5.2 — Deploying with Firebase Studio
+- Lesson 5.2 — Deploying from Cursor with Firebase CLI
 
 ### 💰 [SECTION 6 — How This Turns Into Money](./lessons/07-monetize.md)
 - Lesson 6.1 — How Vibe Coders Actually Make Money
@@ -147,30 +147,34 @@ This course shows you how to build and ship real software using AI, without trad
 
 ## 🛠️ The Stack (All Free to Start)
 
-1. **Firebase Studio** — Backend, auth, database, and hosting in one place
-2. **GitHub** — Your source of truth and project history
-3. **Cursor** — AI-powered code editor that understands your project
+1. **Google AI Studio** — Starting point for the UI, prompts, and first feature ideas
+2. **Firebase Console** — Backend project, auth, database, and App Hosting
+3. **GitHub** — Where the starter code gets pushed so you can clone it locally
+4. **Cursor + Firebase CLI** — Local building, Firebase setup, and deployment
 
-You don't need $300/month in tools. You need these three.
+You don't need $300/month in tools. You need these four.
 
 ### The Workflow
 
 **Here's how you'll actually use them:**
 
-1. **Build project bones in Firebase Studio** — Use prompts to create the basic structure
-2. **Publish from Firebase Studio** — Creates your project in Firebase Console
-3. **Enable services in Firebase Console** — Enable Auth, Firestore, Hosting (makes everything easier later)
-4. **Sync to GitHub** — Firebase Studio creates your GitHub repo automatically (removes GitHub setup friction)
-5. **Clone to Cursor** — Build fast with AI (all services already configured)
-6. **Sync back and deploy** — Deploy from Firebase Studio (one-click deployment)
+1. **Create a project in Firebase Console first** — Go to `console.firebase.google.com` and create the backend project
+2. **Start in Google AI Studio** — Prompt it to link to that Firebase project and click database/auth
+3. **Publish the starting app** — Use AI Studio as the starting point, not the long-term workspace
+4. **Push the code to GitHub from AI Studio** — This gives you the repo you will clone locally
+5. **Finish App Hosting setup in Firebase Console if needed** — Connect the GitHub repo and backend
+6. **Open the project in Cursor** — This is where you actually keep building
+7. **Connect Firebase locally** — Run `npm install -g firebase-tools`, `firebase login`, and `firebase init`
+8. **Build and deploy** — Run `npm run build` and then `firebase deploy`
 
-**Build bones → Publish → Enable services → Sync to GitHub → Build in Cursor → Deploy. Repeat.**
+**Create Firebase project → start in Google AI Studio → push to GitHub → build in Cursor → deploy with Firebase CLI. Repeat.**
 
 **Key points:** 
 - Build project bones first (the structure)
-- Publish before syncing to GitHub (enables services)
+- Create the Firebase project before you ever start linking things
 - Enable all services early (makes Cursor work easier)
-- Firebase Studio creates your GitHub repo automatically
+- AI Studio is the starting point only, not the place you keep syncing work forever
+- AI Studio can push code to GitHub, but it is not your long-term two-way workflow
 - Keep repos private and don't commit secret keys
 
 Each tool does what it's best at. You don't fight the tools.

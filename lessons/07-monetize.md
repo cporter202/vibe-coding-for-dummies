@@ -207,7 +207,7 @@ They solve a **real problem** that people are willing to **pay to have solved**.
 - Ship it
 
 **2. Use your stack**
-- Firebase Studio (no setup)
+- Google AI Studio + Firebase Console (start fast, then connect the real backend)
 - GitHub (version control)
 - Cursor (build fast)
 

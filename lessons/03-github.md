@@ -1,14 +1,12 @@
-# 🗂️ SECTION 2 — GitHub Without the Fear
+# SECTION 2 - GitHub Without the Fear
 
-GitHub scares a lot of beginners. It shouldn't. It's just a place to save your code and see what changed.
+GitHub scares a lot of beginners. It should not. It is just where your project lives online.
 
-**Here's the good news:** Firebase Studio creates your GitHub repo for you automatically. You don't need to set it up manually.
-
-This section removes the fear and shows you how GitHub works (and how Firebase Studio makes it easy).
+This section removes the fear and shows you how GitHub fits into the new workflow.
 
 ---
 
-## Lesson 2.1 — GitHub Explained Like You're 5
+## Lesson 2.1 - GitHub Explained Like You're 5
 
 ### What GitHub Actually Is
 
@@ -17,167 +15,123 @@ This section removes the fear and shows you how GitHub works (and how Firebase S
 - You save your project there
 - You can access it from anywhere
 - You can see what changed
-- You can go back to old versions
+- You can go back to older versions
 
-That's it. No magic. No complexity. Just a place to save your code.
+That is it.
 
 ### Repos = Project Folders
 
 A **repository** (repo) is just a folder for your project.
 
 Think of it like:
-- A folder on your computer = A repo on GitHub
-- Your project files = Your code files
-- Your README = Your project notes
-
-**Creating a repo is like creating a new folder. That's all.**
+- A folder on your computer = a repo on GitHub
+- Your files = your project
+- Your README = your notes
 
 ### Commits = Save Points
 
 A **commit** is like saving your game.
 
-- You make changes to your code
-- You "commit" (save) those changes
-- GitHub remembers what changed
-- You can go back to any save point
+- You make changes
+- You save those changes with a message
+- GitHub remembers that point in time
 
-**It's version control, but think of it as "save points" and it makes sense.**
+### Why GitHub Matters Even If You Are Not a Dev
 
-### Why GitHub Matters Even If You're Not a Dev
-
-You might think: "I'm not a developer, why do I need GitHub?"
-
-**Here's why:**
-
-1. **Your code is safe** — If your computer dies, your code is still on GitHub
-2. **You can see progress** — Look back at what you built and when
-3. **You can work anywhere** — Access your project from any computer
-4. **It's your project's memory** — See what changed and why
-5. **It's professional** — Even if you're a beginner, using GitHub shows you're serious
-
-**You don't need to be a developer to benefit from GitHub. You just need to build things.**
-
-### The Mental Model
-
-Think of GitHub like this:
-
-```
-Your Computer          GitHub
-─────────────         ────────
-Project Folder   →    Repository
-Save File       →    Commit
-See Changes     →    View History
-```
-
-**Same concepts, different names. Don't let the terminology scare you.**
+1. Your code is safe
+2. You can track progress
+3. You can work from different computers
+4. You can share the project when needed
+5. It keeps your work organized
 
 ---
 
-## Lesson 2.2 — How Firebase Studio Creates Your Repo (The Easy Way)
+## Lesson 2.2 - Creating Your First Repo (No Stress)
 
-### Firebase Studio Does It For You
+### GitHub Is the Hand-Off Point
 
-**Here's the magic:** You don't manually create a GitHub repo. Firebase Studio does it for you.
+We are no longer teaching "Firebase Studio will make the repo for you."
 
-**When you publish/sync your code from Firebase Studio:**
+In this workflow:
+- you create the Firebase project first
+- you start the app in Google AI Studio
+- you create the backend in Firebase Console
+- you push the starter code to GitHub
+- you build locally in Cursor
 
-1. Firebase Studio will prompt you to connect to GitHub
-2. It will ask you to create a repo name (like `my-note-app`)
-3. Firebase Studio automatically creates the repo on GitHub
-4. Your code gets synced to that repo automatically
-
-**That's it. No manual setup. No confusion. Firebase Studio handles it.**
-
-**Note:** You can always create a GitHub repo manually first if you prefer. But for vibe coding, we use the Firebase Studio automatic approach because it removes friction and gets you building faster. That's the vibe coding way.
+That means GitHub is the hand-off point between AI Studio and Cursor.
 
 ### What You Need to Do
 
-**Before Firebase Studio can create your repo:**
+1. Create a GitHub account at [GitHub.com](https://github.com) if you do not have one
+2. Let AI Studio create the starter repo when you click GitHub
+3. Keep it private
 
-1. **Create a GitHub account** (if you don't have one)
-   - Go to [GitHub.com](https://github.com)
-   - Sign up (it's free)
-   - That's it
-
-2. **Connect GitHub to Firebase Studio**
-   - When Firebase Studio asks to connect, authorize it
-   - This lets Firebase Studio create repos for you
-
-**That's all the setup you need. Firebase Studio does the rest.**
-
-### Naming Your Repo
-
-When Firebase Studio asks for a repo name, use something descriptive:
-
-**Good names:**
+**Good repo names:**
 - `my-note-app`
 - `habit-tracker`
 - `idea-saver`
 - `resource-bookmarker`
 
-**Bad names:**
+**Bad repo names:**
 - `project`
 - `test`
 - `new-thing`
-- `asdfghjkl`
 
-**Rule:** Name it what it does, not what it is.
+### The Important GitHub Limitation
 
-### Keep Your Repos Private (Important!)
+AI Studio can push code to GitHub, but it is not the place you want to keep syncing back and forth forever.
 
-**When Firebase Studio creates your repo, make it private.**
+The big limitation is:
+- it can push code to GitHub
+- it cannot pull your GitHub changes back in the way we want for this stack
 
-**Why?**
-- Your code is yours (you might not want it public)
-- You might have API keys or sensitive info (we'll cover .gitignore later)
-- Private repos are free on GitHub
+That is why our workflow is:
+- start in AI Studio
+- push to GitHub
+- clone to Cursor
+- stay in Cursor
 
-**How to make it private:**
-- When Firebase Studio asks, select "Private repository"
-- Or change it later in GitHub settings
+### Basic Local Git Flow
 
-**Don't commit secret keys or sensitive information.** We'll learn about .gitignore later to handle this properly.
+Once the AI Studio repo is cloned to your computer, Cursor becomes your normal Git workflow:
 
-### What Happens After Firebase Studio Creates Your Repo
+- make changes
+- commit changes
+- push changes
 
-**Once Firebase Studio creates your repo:**
+GitHub becomes your project history from that point on.
 
-1. Your code is on GitHub (safe and backed up)
-2. You can clone it to your computer
-3. You can open it in Cursor
-4. You can work on it locally
-5. You can commit changes and push them back
+### Keep Your Repos Private
 
-**Firebase Studio made it easy. Now you can use GitHub like a pro.**
+Use a private repo because:
+- your code is yours
+- beginners often accidentally expose keys or config
+- private repos are free
 
-### Using GitHub as a Project Map
+**Do not commit secret keys or sensitive information.**
 
-GitHub isn't just for saving code. It's for tracking your project.
+### What Happens After the Repo Exists
 
-**Your commits tell a story:**
-- "Added user authentication"
-- "Created note saving feature"
-- "Fixed login bug"
-- "Added delete functionality"
+Once the repo is set up:
 
-**Each commit is a milestone. Together, they're your project's history.**
+1. Your code is backed up
+2. You can clone it anywhere
+3. Cursor can work on it locally
+4. You can commit and push changes as you build
+
+GitHub is your source of truth. Firebase is your backend. Cursor is your workshop.
 
 ---
 
-## 🎯 Action Step
+## Action Step
 
-**Before you build your first app:**
+Before you build your first app:
 
-1. **Create a GitHub account** (if you don't have one)
-   - Go to [GitHub.com](https://github.com)
-   - Sign up (it's free)
-   - Verify your email
+1. Create a GitHub account if needed
+2. Be ready to connect AI Studio to GitHub for the starter repo
+3. Keep the repo private
 
-2. **That's it!** Firebase Studio will handle the rest when you publish your first app.
+That is enough. You do not need to overthink GitHub.
 
-**You don't need to create a repo manually. Firebase Studio will do it for you when you sync your code.**
-
-**This is the vibe coding way:** Remove friction. Let the tools do the setup. Focus on building, not configuring.
-
-**Next:** [SECTION 3 — Cursor: Your AI Co-Builder](./04-cursor.md)
-
+**Next:** [SECTION 3 - Cursor: Your AI Co-Builder](./04-cursor.md)

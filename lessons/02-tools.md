@@ -1,218 +1,213 @@
-# 🧱 SECTION 1 — The Vibe Coding Stack (Simple + Free)
+# SECTION 1 - The Vibe Coding Stack (Simple + Free)
 
-You don't need $300/month in tools to ship your first app. You need three things, and they're all free to start.
+You do not need $300/month in tools to ship your first app. You need a simple workflow that gets you moving.
 
-This section covers the exact stack that works, why it works, and how to set it up.
+This section covers the stack, why it works, and how to set it up without getting buried in setup hell.
 
 ---
 
-## Lesson 1.1 — The Only Tools You Need to Start (Free)
+## Lesson 1.1 - The Only Tools You Need to Start (Free)
 
 ### Why Beginners Overspend on Tools
 
 Most beginners think they need:
-- Premium hosting ($20/month)
-- Database services ($15/month)
-- Authentication services ($10/month)
-- Code editors ($10/month)
-- Project management tools ($15/month)
+- Premium hosting
+- A paid database
+- A separate auth product
+- A paid editor
+- Extra workflow tools
 
-**Total: $70+/month before you've even built anything.**
+**Result:** they spend money before they have built anything real.
 
-**Reality:** You don't need any of that to start.
+**Reality:** you can start with a very small stack.
 
 ### The Free Stack That Actually Works
 
-Here's what you actually need:
+Here is what you actually need:
 
-#### 1. **Firebase Studio** (Free)
-- Backend infrastructure
-- Authentication
-- Database
-- Hosting
-- **Cost:** Free tier covers most starter projects
+#### 1. **Google AI Studio** (Free)
+- Great place to start the UI and project bones
+- Fast for prompts, structure, and first features
+- Lets you get momentum before you worry about setup
 
-#### 2. **GitHub** (Free)
-- Source of truth for your code
-- Version control
-- Project history
-- **Cost:** Free for public and private repos
+#### 2. **Firebase Console** (Free tier)
+- Create your real backend project
+- Enable Authentication
+- Enable Firestore
+- Enable App Hosting
 
-#### 3. **Cursor** (Free tier available)
-- AI-powered code editor
-- Understands your entire codebase
-- Helps you build faster
-- **Cost:** Free tier available, paid plans start at $20/month (but you can start free)
+#### 3. **GitHub** (Free)
+- AI Studio can push the starter code here
+- You can clone the repo locally
+- It becomes your safe backup and history
 
-**Total to start: $0/month**
+#### 4. **Cursor + Firebase CLI**
+- Build locally with AI help
+- Connect the app to your Firebase project
+- Deploy from your machine with the Firebase CLI
+
+**Total to start: basically $0**
 
 ### Why This Stack Works
 
-**Firebase Studio** removes the friction:
-- No server setup
-- No database configuration
-- No deployment headaches
-- Everything in one place
+**Google AI Studio** helps you start fast:
+- You can prompt your way into a first version
+- You can shape the UI before everything is perfect
+- You stop staring at a blank screen
+
+**Firebase Console** gives you the real backend:
+- Auth
+- Database
+- App Hosting
+- Project settings that match production
 
 **GitHub** keeps you organized:
-- Your code is safe
-- You can see what changed
-- You can work from anywhere
-- It's your project's memory
+- Your code is backed up
+- You can track changes
+- You can always go back
 
-**Cursor** makes building fast:
-- AI understands your project
-- You describe what you want
-- It writes the code
-- You focus on building, not syntax
+**Cursor** helps you move faster:
+- AI understands your codebase
+- You can keep building after the first prototype
+- It is the best place to wire the app to Firebase and fix issues
 
 ### The Key Point
 
-**You don't need $300/month in tools to ship your first app.**
-
 You need:
-1. A place to build (Firebase Studio)
-2. A place to save your work (GitHub)
-3. A way to build fast (Cursor)
+1. A place to start the app
+2. A real backend project
+3. A place to save your work
+4. A local build environment that can deploy
 
-That's it.
-
----
-
-## Lesson 1.2 — Why Firebase Studio Is Perfect for Beginners
-
-### What Firebase Studio Gives You Out of the Box
-
-When you create a project in Firebase Studio, you get:
-
-#### Authentication
-- User sign-up and login
-- Password reset
-- Email verification
-- Social logins (Google, etc.)
-- **You don't code this. It just works.**
-
-#### Database
-- Real-time database (Firestore)
-- No SQL knowledge needed
-- Store and retrieve data easily
-- **You don't set up servers. It's already there.**
-
-#### Hosting
-- Deploy your app with one click
-- Get a live URL instantly
-- Automatic SSL certificates
-- **You don't configure anything. It deploys.**
-
-### Why It Removes Friction
-
-**Traditional way:**
-1. Set up a server (hours of configuration)
-2. Set up a database (more configuration)
-3. Set up authentication (even more configuration)
-4. Set up hosting (deployment headaches)
-5. Finally start building
-
-**Firebase Studio way:**
-1. Create a project
-2. Start building
-3. Deploy when ready
-
-**The boring but important stuff is handled for you.**
-
-### Why It's Better Than "Local Setup Hell"
-
-Most tutorials start with:
-- "Install Node.js"
-- "Install npm packages"
-- "Set up your local environment"
-- "Configure your database"
-- "Set up authentication"
-
-**Result:** You spend 3 hours setting up and 30 minutes building.
-
-Firebase Studio flips this:
-- Create account (2 minutes)
-- Create project (1 minute)
-- Start building (immediately)
-
-**You spend 3 minutes setting up and hours building.**
-
-### The Actual Workflow (This Is Key)
-
-Here's the exact workflow I use (and you'll use too):
-
-**Step 1: Build Project Bones in Firebase Studio**
-- Create your project in Firebase Studio
-- Use prompts to build the "project bones" — the basic structure and skeleton
-- Get a few prompts in to get it moving
-- This is where you establish the foundation before diving deep
-
-**Step 2: Publish from Firebase Studio**
-- Publish your project from Firebase Studio
-- This creates the project folder in Firebase Console
-- **This step is crucial** — it sets up your project in the Firebase ecosystem
-
-**Step 3: Enable Services in Firebase Console**
-- Go to Firebase Console (the project you just published)
-- Enable Authentication (Email/Password)
-- Enable Firestore Database
-- Enable Hosting
-- Configure any other services you need
-- **This makes your life much easier later** — all services are ready to go
-
-**Step 4: Sync to GitHub (Automatic!)**
-- When you sync from Firebase Studio, it will ask you to create a GitHub repo
-- You just enter a repo name (like `my-note-app`)
-- Firebase Studio automatically creates the repo and syncs your code to it
-- **You don't manually create the repo. Firebase Studio does it for you.**
-- **Important:** Keep your repos private (don't commit secret keys or sensitive info)
-
-**Step 5: Clone to Cursor**
-- Clone the GitHub repo to your computer
-- Open the project folder in Cursor
-- Now you can build fast with AI
-- All your Firebase services are already configured, so Cursor can work with them immediately
-
-**Step 6: Build and Iterate**
-- Use Cursor to build features, refactor, and improve
-- Commit changes to GitHub
-- Sync back to Firebase Studio when ready
-- Deploy from Firebase Studio (one-click deployment)
-
-**That loop is the whole game: Build bones → Publish → Enable services → Sync to GitHub → Build in Cursor → Deploy. Repeat.**
-
-**Why this workflow works:**
-- Firebase Studio removes setup friction (start building immediately)
-- Publishing first ensures all services are properly configured
-- Enabling services early makes everything easier later
-- Firebase Studio removes GitHub setup friction (creates repo for you automatically)
-- Cursor removes building friction (AI helps you build fast with everything already set up)
-
-**You don't fight the tools. You use each tool for what it's best at.**
-
-### Setting Up Firebase Studio
-
-**Exercise: Create Your Firebase Studio Account**
-
-1. Go to [Firebase Studio](https://studio.firebase.google.com/)
-2. Sign up with your Google account (or create one)
-3. Create your first project
-4. Name it something simple: `my-first-vibe-app`
-
-**That's it. You're ready to build.**
-
-**Note:** Don't worry about configuring anything yet. We'll cover building project bones and enabling services in Section 4 when we build something real.
+That is the stack.
 
 ---
 
-## 🎯 Action Step
+## Lesson 1.2 - Why Google AI Studio + Firebase Is Beginner-Friendly
 
-**Create your Firebase Studio account right now.**
+### What Each Tool Does Best
 
-Don't wait. Don't overthink it. Just create the account.
+**Google AI Studio** is where you start:
+- Rough UI
+- Prompt-driven scaffolding
+- First-pass feature ideas
+- Early momentum
 
-Drop a ✅ when you're done (even if it's just in your head).
+**Firebase Console** is where you create the real backend:
+- Authentication
+- Firestore
+- App Hosting
+- Project settings
 
-**Next:** [SECTION 2 — GitHub Without the Fear](./03-github.md)
+**Cursor** is where you turn the prototype into a real app:
+- Clean up code
+- Add features
+- Debug issues
+- Deploy with the Firebase CLI
 
+### Why This Removes Friction
+
+**Old beginner mistake:**
+1. Install everything
+2. Configure everything
+3. Get confused
+4. Never build
+
+**Better workflow:**
+1. Start the app visually in Google AI Studio
+2. Create the Firebase project in Firebase Console
+3. Open the code in Cursor
+4. Connect Firebase locally
+5. Keep building
+6. Deploy from Cursor
+
+You separate the jobs:
+- AI Studio for momentum
+- Firebase Console for backend setup
+- Cursor for real development
+
+### The Actual Workflow
+
+Here is the exact workflow we want in this course:
+
+**Step 1: Create your backend project in Firebase Console**
+- Go to [Firebase Console](https://console.firebase.google.com/)
+- Create a new Firebase project
+- This is the real backend your app will connect to
+
+**Step 2: Start in Google AI Studio**
+- Create the first version of the app
+- Focus on the UI, screens, and basic feature flow
+- Tell it you already created a Firebase project and want this app linked to it
+- Build the project bones first
+
+**Step 3: Enable Firebase services**
+- Turn on Authentication
+- Turn on Firestore
+- Turn on App Hosting if needed
+- In AI Studio, click database and auth when you want the link-up to happen cleanly
+
+**Step 4: Push the starter code to GitHub**
+- AI Studio can create the starting GitHub repo for you
+- Push the starter code there
+- Keep it private
+
+**Step 5: Open the project in Cursor**
+- Clone the repo locally
+- Open it in Cursor
+- This is where you keep building
+
+**Step 6: Connect Firebase locally**
+
+Run:
+
+```bash
+npm install -g firebase-tools
+firebase login
+firebase init
+```
+
+During `firebase init`:
+- choose `App Hosting`
+- use the existing project
+- link the existing backend
+- keep the default route directory unless you know it needs changing
+
+**Step 7: Build and deploy from Cursor**
+
+Run:
+
+```bash
+npm run build
+firebase deploy
+```
+
+**That is the loop: create Firebase project -> start in Google AI Studio -> push to GitHub -> build in Cursor -> deploy with Firebase CLI.**
+
+### Setting Up the Stack
+
+**Exercise: set up the tools**
+
+1. Go to [Google AI Studio](https://aistudio.google.com/)
+2. Go to [Firebase Console](https://console.firebase.google.com/)
+3. Create a Firebase project
+4. Create a GitHub account if needed
+5. Install Cursor on your computer
+
+**That is enough to start.**
+
+We will connect everything in the build section.
+
+---
+
+## Action Step
+
+Do these right now:
+
+1. Open Firebase Console
+2. Create one Firebase project with a simple name
+3. Open Google AI Studio
+
+That way, when you start building in AI Studio, the backend already exists.
+
+**Next:** [SECTION 2 - GitHub Without the Fear](./03-github.md)

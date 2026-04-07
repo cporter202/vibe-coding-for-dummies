@@ -1,378 +1,259 @@
-# 🔥 SECTION 4 — Your First Real Build (Tiny but Real)
+# SECTION 4 - Your First Real Build (Tiny but Real)
 
-This is where it gets real. You're going to build something. It won't be perfect. It might be ugly. But it will be **yours**, and it will be **live**.
+This is where it gets real. You are going to build something small, useful, and live.
 
-This section walks you through building your first app from idea to working prototype.
+This section walks you through the new flow:
+- create the backend in Firebase Console first
+- start the first version in Google AI Studio
+- push the starter code to GitHub
+- keep building in Cursor
 
 ---
 
-## Lesson 4.1 — Picking a "Stupid Simple" Idea
+## Lesson 4.1 - Picking a "Stupid Simple" Idea
 
 ### Why Simple Wins
 
-**Most beginners make this mistake:**
+Most beginners make the same mistake:
+- they try to build a huge app
+- they get overwhelmed
+- they never ship
 
-They try to build:
-- A social media platform
-- An e-commerce site
-- A complex SaaS product
-
-**Result:** They get overwhelmed, give up, and never ship.
-
-**Vibe coding rule:** Start stupid simple. Make it work. Then make it better.
+**Vibe coding rule:** start stupid simple.
 
 ### What "Stupid Simple" Means
 
-**A stupid simple idea:**
-- Takes 1 sentence to explain
-- Has 1-2 core features
-- Can be built in a few hours
-- Solves 1 specific problem
+A stupid simple idea:
+- takes 1 sentence to explain
+- has 1-2 core features
+- can be built in a few hours
+- solves 1 clear problem
 
-**Examples of stupid simple ideas:**
+**Examples:**
+- Note saver
+- Daily checklist
+- Idea tracker
+- Resource bookmarker
 
-✅ **Note Saver**
-- "An app where users can save notes and see them later"
-- Core feature: Save and view notes
-- That's it. Nothing else.
-
-✅ **Daily Checklist**
-- "An app where users can create a daily checklist and check off items"
-- Core feature: Create and check off items
-- That's it.
-
-✅ **Idea Tracker**
-- "An app where users can save ideas and view them later"
-- Core feature: Save and view ideas
-- That's it.
-
-✅ **Resource Bookmarker**
-- "An app where users can save links to resources they want to remember"
-- Core feature: Save and view links
-- That's it.
-
-### The Rule
-
-**If it takes more than 1 sentence to explain, it's too big.**
-
-Your first build should be so simple that you feel almost embarrassed by it. That's perfect.
-
-**You're not building the next Facebook. You're building something that works.**
-
-### How to Pick Your Idea
-
-**Option 1: Use your idea from Section 0**
-- You already wrote down what you want to build
-- Use that, but simplify it
-- Strip it down to 1 core feature
-
-**Option 2: Pick from the examples above**
-- Note Saver
-- Daily Checklist
-- Idea Tracker
-- Resource Bookmarker
-
-**Option 3: Think of your own**
-- What's one thing you wish you had?
-- What's one problem you face daily?
-- What's one tool that would make your life easier?
-
-**Then simplify it until it's 1 sentence.**
-
-### The Mindset
-
-**Your first version is supposed to be bad:**
-- It will be ugly
-- It will be messy
-- It will be wrong
-
-**That's normal. That's expected. That's how you learn.**
-
-**Vibe coding is not about perfection. It's about momentum.**
+**If it takes more than 1 sentence to explain, it is too big.**
 
 ---
 
-## Lesson 4.2 — Building the Project Bones in Firebase Studio
+## Lesson 4.2 - Scaffolding the App with Google AI Studio
 
-### Start with Project Bones
+### Start with the Project Bones
 
-**For vibe coding, we always start in Firebase Studio.** This is where we build what I call the "project bones" — the basic structure and skeleton of your app.
+For this workflow, we start in **Google AI Studio**.
 
-**Here's the process:**
+This is where you shape:
+- the look
+- the screens
+- the first feature flow
+- the project bones
 
-#### Step 1: Create Your Project in Firebase Studio
+You are not trying to finish the whole app there. You are trying to get momentum.
 
-1. **Go to Firebase Studio**
-2. **Create a new project**
-3. **Name it** something simple (like `my-note-app`)
+### Step 1: Create the Firebase Project First
 
-#### Step 2: Build the Project Bones with Prompts
+Go to [Firebase Console](https://console.firebase.google.com/) and:
 
-**Use prompts in Firebase Studio to get the basic structure:**
+1. Create a Firebase project
+2. Turn on analytics if you want it
+3. Open the project settings page
+4. Keep the project details handy so you can reference them in AI Studio
 
-**Example prompts to get started:**
+You want the backend ready before you start prompting AI Studio.
 
-1. "Create a simple web app structure with HTML, CSS, and JavaScript files"
-2. "Set up a basic login page with email and password fields"
-3. "Create a simple form to add notes with a title and content field"
-4. "Set up a basic page to display a list of notes"
+### Step 2: Start the First Version in Google AI Studio
 
-**You're not building the full app yet. You're building the bones — the structure that everything else will attach to.**
+Go to [Google AI Studio](https://aistudio.google.com/) and start building the first version of the app.
 
-**Get a few prompts in to get it moving.** Don't try to build everything at once. Just establish the foundation.
+Focus on:
+- a simple homepage
+- the main screen
+- the main form
+- the core interaction
 
-#### Step 3: Publish from Firebase Studio
+**Example prompts:**
 
-**This is crucial:** Publish your project from Firebase Studio.
+1. "Create a simple web app for saving notes."
+2. "Make the UI clean, modern, and mobile-friendly."
+3. "Add a login screen and a notes list view."
+4. "Keep the code simple and beginner-friendly."
 
-1. **Click "Publish" or "Deploy"** in Firebase Studio
-2. **This creates your project folder in Firebase Console**
-3. **This is what enables you to configure services**
+Tell it clearly that:
+- you already created the Firebase project
+- you want this app linked to that project
+- you want auth and database included if needed
 
-**Why publish first?** Because this creates your project in the Firebase ecosystem, which allows you to enable all the services you need.
+### Step 3: Confirm the Firebase Link
 
-#### Step 4: Enable Services in Firebase Console
+In AI Studio:
 
-**Now go to Firebase Console** (the project you just published):
+1. paste in the Firebase project details
+2. click database and auth if the app may need them
+3. build the project
+4. confirm the project is linked correctly
 
-1. **Enable Authentication:**
-   - Go to Authentication → Sign-in method
-   - Enable "Email/Password"
-   - Save
+If auth and Firestore already look set up, that is a good sign the connection worked.
 
-2. **Enable Firestore Database:**
-   - Go to Firestore Database
-   - Click "Create database"
-   - Start in test mode (we'll set up security rules later)
-   - Choose a location (pick the closest to you)
+### Step 4: Publish the Starting Version
 
-3. **Enable Hosting:**
-   - Go to Hosting
-   - Click "Get started"
-   - Follow the setup (Firebase will guide you)
+Use AI Studio to publish the starting app.
 
-**This step makes your life much easier later.** All your services are configured and ready to go. When you move to Cursor, everything is already set up.
+This gives you the first version and helps prime the App Hosting side.
 
-#### Step 5: Sync to GitHub
+If App Hosting is flaky or incomplete here, that is okay. The important part is getting the project started.
 
-**Now sync your code to GitHub:**
+### Step 5: Push the Starter Code to GitHub
 
-1. **In Firebase Studio, click "Sync" or "Publish to GitHub"**
-2. **Firebase Studio will ask you to create a GitHub repo**
-3. **Enter a repo name** (like `my-note-app`)
-4. **Make it private** (don't commit secret keys)
-5. **Firebase Studio automatically creates the repo and syncs your code**
+Once you have the first version:
 
-**Your project bones are now in GitHub, and all your Firebase services are enabled.**
+1. Click GitHub in AI Studio
+2. Create the repo
+3. Push the starter code
+2. Clone it to your computer
+3. Open it in Cursor
 
-#### Step 6: Clone to Cursor
+This is the point where the project stops being a rough prototype and becomes a real app you can keep improving.
 
-**Now you're ready to build fast:**
+### Step 6: Finish App Hosting Setup If Needed
 
-1. **Clone the GitHub repo** to your computer
-2. **Open the project folder in Cursor**
-3. **Start building with AI**
+If AI Studio did not fully wire App Hosting for you:
 
-**Why this order matters:**
-- Project bones are established
-- All Firebase services are enabled and configured
-- Cursor can immediately work with your Firebase setup
-- No configuration headaches later
+1. go to App Hosting in Firebase Console
+2. connect the GitHub repo
+3. select the existing Firebase web app or backend when prompted
+4. finish the initial setup there
 
-**The key:** Build bones → Publish → Enable services → Sync to GitHub → Build in Cursor. This order makes everything easier.
+### Step 7: Connect Firebase in Cursor
+
+Inside Cursor, use the terminal and run:
+
+```bash
+npm install -g firebase-tools
+firebase login
+firebase init
+```
+
+During `firebase init`:
+- choose `App Hosting`
+- use the existing project
+- link the existing backend
+- leave the app route directory alone unless you know it should change
+
+If Cursor generated the frontend but not the Firebase wiring, ask it to:
+- add Firebase config
+- wire up Authentication
+- wire up Firestore reads and writes
+- prepare App Hosting deployment
+
+### Step 8: Keep Iterating in Cursor
+
+Now build for real:
+
+- clean up the UI
+- fix rough code
+- connect forms to Firestore
+- add auth flows
+- test everything locally
+
+**This is the core loop:** prompt, run, test, fix, repeat.
+
+### Why This Order Works
+
+This order is cleaner:
+
+1. Firebase Console gives you the real backend first
+2. Google AI Studio gives you a polished first pass
+3. Cursor gives you the best environment for actual development
+
+That means you are not depending on one tool to do every job.
 
 ### Accepting "Ugly First"
 
-**The code Cursor generates won't be perfect:**
-- The styling might be basic
-- The structure might not be ideal
-- There might be some inefficiencies
+Your first version will not be perfect:
+- styling may be rough
+- structure may be messy
+- code may need cleanup
 
-**That's fine. You're not building perfect code. You're building something that works.**
+That is normal.
 
-**You can always refactor later. First, make it work.**
-
-### Running the App Early
-
-**Don't wait until everything is perfect to run it.**
-
-**As soon as Cursor generates the structure:**
-1. Run the app
-2. See what works
-3. See what doesn't
-4. Fix what's broken
-5. Repeat
-
-**The faster you see it running, the faster you'll understand what you're building.**
-
-### The Iterative Process
-
-**Step 1: Scaffold**
-- Ask Cursor to create the basic structure
-- Run it
-- See what you have
-
-**Step 2: Fix**
-- What's broken?
-- What's missing?
-- Ask Cursor to fix it
-
-**Step 3: Improve**
-- What could be better?
-- What's confusing?
-- Ask Cursor to improve it
-
-**Step 4: Repeat**
-- Keep iterating
-- Keep improving
-- Keep building
-
-**You're not building everything at once. You're building, testing, and improving in cycles.**
+**First make it real. Then make it better.**
 
 ---
 
-## Lesson 4.3 — Connecting Firebase (High Level)
+## Lesson 4.3 - Connecting Firebase (High Level)
 
 ### Auth Basics
 
-**Firebase Authentication handles:**
-- User sign-up
-- User login
-- Password reset
-- Email verification
-- Session management
+Firebase Authentication handles:
+- sign-up
+- login
+- password reset
+- sessions
 
-**You don't code this. You configure it.**
-
-**In Firebase Studio:**
-1. Enable Authentication
-2. Choose sign-in methods (Email/Password is the simplest)
-3. That's it
-
-**In your app:**
-- Cursor will generate the auth code
-- Users can sign up and log in
-- Firebase handles the rest
-
-**No deep theory needed. It just works.**
+You do not need deep theory first. You just need it working.
 
 ### Database Basics
 
-**Firebase Firestore is a NoSQL database:**
-- You store data in "collections"
-- Each item is a "document"
-- Documents have "fields"
+Firestore stores your app data.
 
-**Think of it like this:**
-```
+Think in simple terms:
+- a collection is a group of items
+- a document is one item
+- fields are the values inside it
+
+Example:
+
+```text
 Collection: notes
-  Document 1:
-    - title: "My first note"
-    - content: "This is the content"
-    - userId: "user123"
-  Document 2:
-    - title: "My second note"
-    - content: "More content"
-    - userId: "user123"
+  Document:
+    title: "My first note"
+    content: "Hello world"
+    userId: "user123"
 ```
 
-**That's it. No SQL. No complex queries. Just collections and documents.**
+That is enough to get started.
 
-**In your app:**
-- Cursor will generate the database code
-- You save notes to the "notes" collection
-- You read notes from the "notes" collection
-- Firebase handles the rest
+### What You Actually Need to Know
 
-### No Deep Firebase Theory Yet
+You do not need to master:
+- advanced security rules
+- optimization
+- scaling theory
 
-**You don't need to understand:**
-- How Firebase works under the hood
-- Database optimization
-- Security rules (yet)
-- Complex queries
+You do need to know:
+- users can sign in
+- data can be saved
+- data can be read back
 
-**You just need to know:**
-- Users can sign up and log in (auth)
-- You can save data (database)
-- You can read data (database)
-
-**That's enough to build your first app.**
-
-### Focus on Working, Not Perfect
-
-**Your first version:**
-- Might not have perfect security rules
-- Might not be optimized
-- Might not scale to millions of users
-
-**That's fine. You're building version 1, not version 100.**
-
-**Get it working. Then make it better.**
-
-### The Connection Flow
-
-**Here's how it works:**
-
-1. **User signs up/logs in** → Firebase Auth handles it
-2. **User creates a note** → App saves it to Firestore
-3. **User views notes** → App reads from Firestore
-4. **User deletes a note** → App removes it from Firestore
-
-**Firebase handles the infrastructure. Your app handles the logic.**
-
-**You don't need to understand everything. You just need to make it work.**
+That is enough for version 1.
 
 ---
 
-## 🎯 Action Step: Build Your First App
+## Action Step: Build Your First App
 
-**Right now, do this (in this exact order):**
+Do this in order:
 
-1. **Pick your stupid simple idea** (from Lesson 4.1)
+1. Pick a stupid simple idea
+2. Create the Firebase project in Firebase Console
+3. Start the first version in Google AI Studio
+4. Push the starter code to a private GitHub repo
+5. Open the project in Cursor
+6. Run:
 
-2. **Go to Firebase Studio:**
-   - Create a new project
-   - Name it something simple
+```bash
+npm install -g firebase-tools
+firebase login
+firebase init
+```
 
-3. **Build the project bones with prompts:**
-   - "Create a simple web app structure"
-   - "Set up a basic login page"
-   - "Create a form for [YOUR CORE FEATURE]"
-   - Get a few prompts in to establish the structure
+7. Choose `App Hosting` and link the existing backend
+8. Keep building and testing locally
 
-4. **Publish from Firebase Studio:**
-   - Click "Publish" or "Deploy"
-   - This creates your project in Firebase Console
+Do not try to make it perfect. Just make it real.
 
-5. **Enable services in Firebase Console:**
-   - Enable Authentication (Email/Password)
-   - Enable Firestore Database
-   - Enable Hosting
-   - Get everything configured
-
-6. **Sync to GitHub:**
-   - In Firebase Studio, sync to GitHub
-   - Create a private repo
-   - Firebase Studio handles it automatically
-
-7. **Clone to Cursor:**
-   - Clone the GitHub repo to your computer
-   - Open the project folder in Cursor
-   - Now build fast with AI
-
-8. **Keep building and iterating:**
-   - Use Cursor to add features
-   - Commit changes to GitHub
-   - Sync back to Firebase Studio when ready
-
-**Don't skip steps. This order makes everything easier.**
-
-**Remember:** Build bones first. Enable services. Then build fast in Cursor. Your first version is supposed to be bad. That's how you learn.
-
----
-
-**Next:** [SECTION 5 — Shipping (Most People Never Get Here)](./06-ship.md)
+**Next:** [SECTION 5 - Shipping (Most People Never Get Here)](./06-ship.md)
 
 **Having issues?** Check out the [Troubleshooting Guide](./09-troubleshooting.md) for common fixes.
-

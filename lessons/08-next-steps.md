@@ -14,7 +14,7 @@ This section shows you what's next and how to keep building.
 
 **What you've learned:**
 - The vibe coding mindset
-- The tools (Firebase Studio, GitHub, Cursor)
+- The tools (Google AI Studio, Firebase, GitHub, Cursor)
 - The workflow (build, commit, deploy)
 - How to ship your first app
 - How to think about monetization
@@ -92,7 +92,7 @@ This section shows you what's next and how to keep building.
 #### Daily Lessons
 - Real build walkthroughs
 - Step-by-step tutorials
-- How to use Firebase, GitHub, and Cursor
+- How to use Google AI Studio, Firebase, GitHub, and Cursor
 - How to think through problems
 
 #### Real Projects
@@ -248,4 +248,3 @@ This section shows you what's next and how to keep building.
 
 - **[Quick Reference Guide](../QUICK-REFERENCE.md)** — Cheat sheet for when you need a reminder
 - **[Troubleshooting Guide](./09-troubleshooting.md)** — Common issues and how to fix them
-
