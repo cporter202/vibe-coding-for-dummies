@@ -151,8 +151,9 @@ This course shows you how to build and ship real software using AI, without trad
 2. **Firebase Console** — Backend project, auth, database, and App Hosting
 3. **GitHub** — Where the starter code gets pushed so you can clone it locally
 4. **Cursor + Firebase CLI** — Local building, Firebase setup, and deployment
+5. **[MySpec](https://myspec.dev)** — Interactive requirements discovery & spec generator (`constitution.md`, `requirements.md`, `solution.md`, `tasks.md`) to guide Cursor before prompt-coding (Free tier: 20 projects, 100 specs)
 
-You don't need $300/month in tools. You need these four.
+You don't need $300/month in tools. You need these free tools.
 
 ### The Workflow
 
