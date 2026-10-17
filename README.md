@@ -8,6 +8,18 @@
 [![Beginner Friendly](https://img.shields.io/badge/Beginner-Friendly-brightgreen?style=for-the-badge)](./lessons/01-mindset.md)
 [![Free](https://img.shields.io/badge/Free-Start-00C853?style=for-the-badge)](./lessons/02-tools.md)
 
+<!-- AIWITHCHRIS-BANNER-START -->
+<p align="center">
+  <a href="https://aiwithchris.com" target="_blank" rel="noopener">
+    <img src=".github/assets/ai-toolkit-banner.png" alt="Hey, I'm Chris — Work Smarter, Create Faster, Earn More With AI. Join my AI Playbook at aiwithchris.com, $10/month" width="100%">
+  </a>
+</p>
+<p align="center">
+  <a href="https://aiwithchris.com"><strong>🚀 Join my AI Playbook — aiwithchris.com</strong></a><br>
+  $10/month · 3,600+ prompts · agent workflows · repo breakdowns · money ideas
+</p>
+<!-- AIWITHCHRIS-BANNER-END -->
+
 ![Chris Porter](https://firebasestorage.googleapis.com/v0/b/facesift.firebasestorage.app/o/user_uploads%2F83EXwNWgaKe1BHmyd9ISw3HCEfi2%2F1768274923843-ChatGPT%20Image%20Jan%2012%2C%202026%2C%2010_28_19%20PM.png?alt=media&token=ed392466-0616-4781-94b0-a829268f3f23)
 
 **Build real software without being a "coder"**
